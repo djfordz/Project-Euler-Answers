@@ -1,0 +1,57 @@
+@charset utf-8;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    line-height: 1.22em;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+a:visited {
+    color: #555;
+}
+a:hover, a:active {
+    color: #222;
+}
+header {
+    margin-bottom: 40px;
+}
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+section {
+    margin-top: 40px;
+    min-height: 100%;
+    padding-bottom: 50px;
+    position: relative;
+}
+footer {
+    height: 50px;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+button {
+    width: 100px;
+    height: 33px;
+    background-color: green;
+    color: black;
+    border-radius: 25px;
+}
+#container {
+    width: 200px;
+    height: 20px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid red;
+}
