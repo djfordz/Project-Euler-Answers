@@ -17,6 +17,6 @@ function calc (max) {
             return total;
         };
 //        console.log(sum(newNum))
- document.getElementById('answer').innerHTML=sum(newNum);
+ document.getElementById('problemOne').innerHTML=sum(newNum);
 };
 calc(1000);

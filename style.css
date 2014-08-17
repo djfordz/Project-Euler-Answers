@@ -48,7 +48,7 @@ button {
     color: black;
     border-radius: 25px;
 }
-#container {
+.container {
     width: 200px;
     height: 20px;
     margin: 20px;

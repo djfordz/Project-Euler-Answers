@@ -1,25 +1,26 @@
-var number = [1, 2];
-
-
-function calc(max) {
-    function fibonacci(array) {
-        var i = 0;
+var number = [1, 1];
+var num = [];
+    
+    function fibonacci(max) {
+        var i = 1;
         for(i; i <= max; i++) {
-            number.splice(2, 1, i);
-//             number[0] = number[2];
-             number[2] = number[0] + number[1]
-//             number[1] = number[2];
-             var newNum = number.map(function(sum) {
-                return number[0] + number[1]
-             });
-             newNum.reduce(function(a, b) {
-                
-             });
-            console.log(newNum);
-            console.log(number);
+            number[2] = number[0] + number[1];
+            number.splice(i, 0);
+            number[0] = number[1];
+            number[1] = number[2];
+                 if(number[0] % 2 === 0  && number[0] < max) {
+                    num.push(number[0]);
+                }
         }
-           
+        console.log(num);
+        function all (array) {
+            var total = 0;
+            for (var i = 0, l = num.length; i < l; i++) {
+                total += num[i];
+            }
+            return total;
+        };
+        console.log(all(num));
+        document.getElementById('problemTwo').innerHTML=all(num);
     }
-    fibonacci()
-}
-calc(10);
+fibonacci(4000000);
