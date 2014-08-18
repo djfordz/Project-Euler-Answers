@@ -1,26 +1,25 @@
 var number = [1, 1];
-var num = [];
+var evenNumbers = [];
     
     function fibonacci(max) {
-        var i = 1;
-        for(i; i <= max; i++) {
+        while(number[0] < max) {
             number[2] = number[0] + number[1];
-            number.splice(i, 0);
+            number.splice(0, 0);
             number[0] = number[1];
             number[1] = number[2];
                  if(number[0] % 2 === 0  && number[0] < max) {
-                    num.push(number[0]);
+                    evenNumbers.push(number[0]);
                 }
         }
-        console.log(num);
-        function all (array) {
+        console.log(evenNumbers);
+        function sum(array) {
             var total = 0;
-            for (var i = 0, l = num.length; i < l; i++) {
-                total += num[i];
+            for (var i = 0, l = evenNumbers.length; i < l; i++) {
+                total += evenNumbers[i];
             }
             return total;
         };
-        console.log(all(num));
-        document.getElementById('problemTwo').innerHTML=all(num);
+        console.log(sum(evenNumbers));
+        document.getElementById('problemTwo').innerHTML=sum(evenNumbers);
     }
 fibonacci(4000000);
