@@ -1,11 +1,16 @@
-var number = 600851475143, factor = 2;
-function calc(number) {
+factor = 2;
+function getPrime(number) {
         while(number != factor) {
             if (number % factor === 0) {
                 number = number / factor;
                 factor = 2;
             } else {factor += 1}
         }
-        console.log(factor);
+//        console.log(factor);
+        function writePrime(factor) {
+            return factor
+        }
+        console.log(writePrime(factor))
+
 }
-calc(number);
+getPrime(600851475143);
