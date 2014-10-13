@@ -1,4 +1,5 @@
-factor = 2;
+var factor = 2;
+
 function getPrime(number) {
         while(number != factor) {
             if (number % factor === 0) {
