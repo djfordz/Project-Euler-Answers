@@ -7,10 +7,13 @@ function getPrime(number) {
                 factor = 2;
             } else {factor += 1}
         }
+        
 //        console.log(factor);
+
         function writePrime(factor) {
-            return factor
+            return factor;
         }
+        
         console.log(writePrime(factor))
 
 }
