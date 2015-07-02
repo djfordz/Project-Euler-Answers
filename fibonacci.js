@@ -2,12 +2,12 @@ var number = [1, 1];
 var evenNumbers = [];
     
     function fibonacci(max) {
-        while(number[0] < max) {
+        while(number[0] <= max) {
             number[2] = number[0] + number[1];
             number.splice(0, 0);
             number[0] = number[1];
             number[1] = number[2];
-                 if(number[0] % 2 === 0  && number[0] < max) {
+                 if(number[0] % 2 === 0  && number[0] <= max) {
                     evenNumbers.push(number[0]);
                 }
         }
